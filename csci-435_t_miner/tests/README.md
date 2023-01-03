@@ -1,0 +1,2 @@
+# Testing
+All five of these repositories either use real life datasets (with real requirements and code) or real life repositories found in the wild. They are then formatted to our standards, and our action is ran against the repositories. In each folder, you will find a link to a finished output, as well as a rundown of which files are being compared. These are our acceptance tests, making sure that our action works with any given repository.

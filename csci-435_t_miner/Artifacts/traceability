@@ -1,0 +1,6 @@
+Traceability is a mechanism to uncovering implicit relationships among software artifacts such as connecting certain issues to specific code.
+
+Current techniques are limited, as they only use one measure of similarity and aren’t able to detect both implicit and explicit relationships
+
+
+COMET overcomes these limitations, and is able to infer trace links

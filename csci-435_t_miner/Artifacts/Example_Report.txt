@@ -1,0 +1,15 @@
+Pull-Request ID: 33xx
+
+T-Miner Impact Traceability Analysis:
+    Commit ID: 22xx
+        Highly Probable Affected Artifacts:
+            Source Code: PythonFile1.py (Probability: 0.6)
+            Source Code: PythonFile2.py (Probability: 0.5)
+            Test Case: TestCase.py (Probability: 0.65)
+            Unknown File: Unknown.txt (Probability: 0.99)
+    Commit ID: 33xx
+        Highly Probable Affected Artifacts:
+            Source Code: Script.java (Probability: 0.7)
+    Issue ID: 44xx
+        Highly Probable Affected Artifacts:
+            Test Case: TestCase.py (Pr: 0.88)
