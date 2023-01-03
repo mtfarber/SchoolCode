@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1666393814423" transient="false">
+	<site updateable="true" url="file:/Users/mattfarber/.p2/pool/" enabled="true" policy="MANAGED-ONLY">
+		<feature id="org.springframework.boot.ide.main.feature" version="4.16.0.202209151144" url="features/org.springframework.boot.ide.main.feature_4.16.0.202209151144/">
+		</feature>
+		<feature id="org.eclipse.emf.ecore" version="2.29.0.v20220817-1401" url="features/org.eclipse.emf.ecore_2.29.0.v20220817-1401/">
+		</feature>
+		<feature id="org.springframework.ide.eclipse.xml.namespaces.feature" version="4.16.0.202209151144" url="features/org.springframework.ide.eclipse.xml.namespaces.feature_4.16.0.202209151144/" plugin-identifier="org.springframework.ide.eclipse">
+		</feature>
+		<feature id="org.springframework.tooling.boot.ls.feature" version="4.16.0.202209151102" url="features/org.springframework.tooling.boot.ls.feature_4.16.0.202209151102/">
+		</feature>
+		<feature id="org.eclipse.emf.common" version="2.27.0.v20220817-1401" url="features/org.eclipse.emf.common_2.27.0.v20220817-1401/">
+		</feature>
+		<feature id="org.springframework.ide.eclipse.boot.dash.feature" version="4.16.0.202209151144" url="features/org.springframework.ide.eclipse.boot.dash.feature_4.16.0.202209151144/" plugin-identifier="org.springframework.ide.eclipse">
+		</feature>
+	</site>
+</config>

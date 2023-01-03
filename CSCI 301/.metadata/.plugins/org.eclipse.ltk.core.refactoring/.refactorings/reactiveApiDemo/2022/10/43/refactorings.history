@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;config, controller, entity, model, repository, service&apos; to &apos;reactiveapidemo&apos;" description="Move 6 resources to &apos;reactiveapidemo&apos;" destination="src/main/java/com/iamiagkov/reactiveapidemo" element1="/demo/src/main/java/com/example/demo/config" element2="/demo/src/main/java/com/example/demo/controller" element3="/demo/src/main/java/com/example/demo/entity" element4="/demo/src/main/java/com/example/demo/model" element5="/demo/src/main/java/com/example/demo/repository" element6="/demo/src/main/java/com/example/demo/service" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="6" stamp="1666394548370" updateReferences="true"/>
+</session>
