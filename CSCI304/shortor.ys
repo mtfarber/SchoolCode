@@ -1,0 +1,116 @@
+#Matthew Farber, 05/07/2021, TR 2:00-3:20, Assignment 8
+
+.pos 0x0
+
+main:
+   irmovl stack, %esp    # set stack ptr
+   irmovl input, %esi    # input
+   irmovl output, %edi   # output
+
+mainloop:
+   mrmovl (%esi), %ecx   # %ecx holds values from input
+
+   irmovl $0, %edx       # get ready to test value for 0
+   addl   %ecx, %edx     # add just to set condition codes
+   je     end            # val == 0, so we're done
+
+   //jump to loops
+
+endloop:
+   rmmovl %ecx, (%edi)   # store value in output
+
+   irmovl $4, %edx       # prepare to set next outpu address
+   addl   %edx, %edi     # set output address
+
+   rmmovl %eax, (%edi)   # store return value in output
+
+   addl   %edx, %esi     # set input addr
+   addl   %edx, %edi     # set output address
+
+   jmp    mainloop
+
+end:
+   halt
+
+neg:
+    pushl   %ebp
+    rrmovl  %esp, %ebp
+    pushl   %edi
+
+    xorl    %eax, %edi
+    subl    %edi, %eax
+
+    popl    %edi
+    popl    %ebp
+    ret
+
+rmult:
+    pushl  %ebp           # prologue
+    rrmovl %esp, %ebp
+    pushl  %edi
+
+    mrmovl 8(%ebp), %edi
+    rrmovl %edi, %eax
+    addl   %edi, %eax
+
+    popl   %edi
+    popl   %ebp
+    ret
+
+square:
+
+  pushl  %ebp           # prologue
+  rrmovl %esp, %ebp
+  pushl  %edi
+  pushl  %esi
+
+  mrmovl 8(%ebp), %edi
+  mrmovl 8(%ebp), %esi
+
+  call rmult
+
+  popl   %esi
+  popl   %edi
+  popl   %ebp
+  ret
+
+pushl
+
+rfact:
+    pushl   %ebp
+    rrmovl  %esp, %ebp
+    pushl   %edi
+
+    subl    $20, %esp
+    mrmovl  8(%ebp), %ebx
+    irmovl  $1, %ebx
+
+    pushl   %ebx
+    subl    $1, %ebx
+    popl    %ebx
+
+    jle     .L1
+    addl    -1(%ebx), %eax
+    rmmovl  %eax, (%esp)
+    call    rfact
+    imull   %ebx, %eax
+.L1:
+    addl    $20, %esp
+    popl    %ebx
+    popl    %ebp
+    ret
+
+
+
+.align 4
+
+input:
+.long 4
+.long -9
+.long 13
+.long 0
+
+output:
+
+.pos 0x800
+stack:

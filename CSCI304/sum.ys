@@ -1,0 +1,42 @@
+.pos 0x0
+            irmovl $10, %ecx            #n = 10
+            irmovl arr, %eax            #moves base address of arr to %eax
+            irmovl $0, %esi             #arr increment = 0
+            addl %eax, %esi             #makes %esi new base of arr with increment
+            irmovl $0, %ebx             #summation = 0
+
+mainloop:   irmovl $0, %edi             #i2(second i) = 0
+            irmovl $-7, %ebp            #sets result to -7 so first result = -10
+
+summation:
+            irmovl $7, %eax             #7 in eax
+            addl %eax, %ebp             #result + eax
+
+            irmovl $1, %eax             #get ready to increment i2
+            addl %eax, %edi             #i2++
+
+            rrmovl %ebx, %eax           #holder = i
+            subl %edi, %eax             #i-i2
+
+            jge summation               #loop for i times
+
+            irmovl $10, %eax            #get ready to subtract 10 from result
+            subl %eax, %ebp             #result -=10
+
+            addl %ebp, %edx             #sum += result
+
+            rmmovl %edx, (%esi)         #arr[i] = summation(i)
+
+            irmovl $4, %eax             #gets ready to compute next addr in arr
+            addl %eax, %esi             #offset increased by 4 bytes
+
+            irmovl $1, %eax             #gets ready to increment i
+            addl %eax, %ebx             #i++
+
+            rrmovl %ecx, %eax           #holder = n
+            subl %ebx, %eax             #n -= i
+
+            jge mainloop                #loop n times
+            halt
+.align 4
+arr:
