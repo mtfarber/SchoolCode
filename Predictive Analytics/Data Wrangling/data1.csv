@@ -1,0 +1,21 @@
+id,age,sex,grade,race4,bmi,weight_kg,smoked_ever,bullied_past_12mo,height_m
+335340,17 years old,Female,10th,White,27.5671,66.23,NA,NA,1.550000494
+638618,16 years old,Female,9th,NA,29.3495,84.82,Yes,NA,1.699999449
+922382,14 years old,Male,9th,White,18.1827,57.61,Yes,FALSE,1.77999897
+923122,15 years old,Male,9th,White,21.3754,60.33,Yes,FALSE,1.680000989
+923963,15 years old,Male,10th,Black or African American,19.5988,63.5,No,TRUE,1.799998413
+925603,16 years old,Male,10th,All other races,22.191,70.31,No,TRUE,1.780000451
+933724,16 years old,Female,10th,All other races,20.9913,45.36,Yes,TRUE,1.469998377
+935435,17 years old,Female,12th,All other races,17.4814,43.09,No,FALSE,1.57000177
+1096564,15 years old,Male,10th,All other races,22.4593,79.38,NA,TRUE,1.879998225
+1108114,17 years old,Female,9th,Black or African American,26.5781,68.04,No,FALSE,1.600000752
+1306150,16 years old,Male,10th,Hispanic/Latino,21.1874,67.13,NA,FALSE,1.779997903
+1307481,17 years old,Male,12th,Hispanic/Latino,19.4637,56.25,No,FALSE,1.699998595
+1307872,17 years old,Male,11th,Hispanic/Latino,20.6121,61.69,No,FALSE,1.730000644
+1311617,15 years old,Female,10th,Hispanic/Latino,27.4648,70.31,No,TRUE,1.600001274
+1313153,16 years old,Female,11th,Hispanic/Latino,26.5781,68.04,No,TRUE,1.600000752
+1313291,16 years old,Female,11th,White,24.8047,63.5,No,FALSE,1.599999597
+1313477,16 years old,Female,10th,All other races,25.0318,76.66,No,TRUE,1.750001284
+1315121,17 years old,Female,11th,NA,22.2687,54.89,Yes,FALSE,1.569998303
+1315850,17 years old,Female,12th,Hispanic/Latino,19.4922,49.9,NA,FALSE,1.599999487
+1316123,18 years old or older,Female,12th,Black or African American,27.4894,74.84,Yes,FALSE,1.650001196

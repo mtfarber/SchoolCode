@@ -1,0 +1,11 @@
+StudentID	GMAT	Country	Gender	Program
+1	602	Canada	M	BBA
+2	607	Italy	M	MBA
+3	650	Canada	F	MBA
+4	573	Brazil	F	MBA
+5	752	Italy	M	MBA
+6	622	Spain	M	BBA
+7	704	Brazil	F	BBA
+8	739	Australia	F	BBA
+9	589	Italy	M	BBA
+10	656	Italy	M	MBA
